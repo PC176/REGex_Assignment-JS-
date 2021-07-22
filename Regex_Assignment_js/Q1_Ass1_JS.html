@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--- #Task 2
+    - REFERRAL CODE:    SIRSS2161
+    - NAME         :    PRATIK CHOUBEY -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1-Assi1(17-07-21)</title>
+</head>
+<body>
+    <div><b>Question-1</b><br>
+        WAP to replace implement find and replace mechanism using JS?<br>
+        <b>Solution-1</b>
+    </div>
+    <hr>
+    <form id = "formId" action="#form" onsubmit="Myfunction()" >
+        <table>
+            <tr>
+                <td><label for="text">Enter a text to editing:</label></td>
+                <td><textarea id = "text" rows="3" cols="25"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="rword">Enter the word you want to replace:</label></td>
+                <td><input id = "rword" type="text"></input></td>
+            </tr>
+            <tr>
+                <td><label for="word">Enter the word to be replaced:</label></td>
+                <td><input id = "word" type="text"></input></td>
+            </tr>
+            <tr>
+               <td ><input id = "submit_button" type="submit"></td> 
+            </tr>
+            <tr>
+                <td id = "After-editing" colspan="2" ></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function Myfunction(){
+        var text= document.getElementById("text").value;
+        var rword=document.getElementById("rword").value;
+        var word=document.getElementById("word").value;
+        var ntext = text.replaceAll(rword, word);
+        document.getElementById("After-editing").innerHTML = "<b>After Editing the Text:</b><br/> " + ntext;
+        return false;
+        }
+    </script>
+</body>
+</html>
