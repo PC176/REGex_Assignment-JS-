@@ -1,3 +1,3 @@
-# Regex_Assignment_HTML
+# Regex_Assignment_JS(17/07/2021)
 - REFERRAL CODE:    SIRSS2161
 - NAME         :    PRATIK CHOUBEY
